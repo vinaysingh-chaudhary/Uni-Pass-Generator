@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uni Pass Generator</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="favicon.png">
+
+
+<meta property="og:title" content="Uni Pass Generator" />
+<meta property="og:description" content="Tap tap and get new unique password" />
+<meta property="og:image" content="https://ibb.co/XCZz3Tg" />
+
+  </head>
+  <body>
+
+    <!-- main-container -->
+    <div class="wrapper">
+
+      <div class="website-name">Uni Pass Generator</div>
+
+                    <!-- password-copy-section -->
+                    <div class="password-copy-section">
+
+                      <input  class="password-section " id="uppercase" readonly 
+                      placeholder="Password"/>
+            
+                      <button  class="clip-board-btn">
+                        <span class="copied-text"></span>
+                        <i class="fa-solid fa-copy"></i>
+                      </button>
+            
+                    </div>
+
+      <!-- inner-div -->
+    <div class="inner-div">
+
+
+
+
+        <!-- password-option-div -->
+        <div class="password-option-div">
+
+          <div class="pass-length-div">
+            <div class="password-length-text">
+              <p>Password Length</p>
+            </div>
+
+            <div class="password-length-number">
+              <p class="data-length-number">0</p>
+            </div>
+          </div>
+
+
+          <!-- range -->
+          <div class="password-range-meter">
+            <input class="password-range-slider" type="range" id="points" name="points" min="1" max="20"  />
+          </div>
+
+
+
+          <!-- check-boxes -->
+          <div class="check-boxes">
+
+            <p>Include</p>
+
+            <div class="check-box-1 check-box-label-widthandhight">
+              <input type="checkbox" id="uppercase1" class="check-boxes-checked"/>
+              <label for="uppercase1">UPPERCASE</label>
+            </div>
+
+            <div class="check-box-2 check-box-label-widthandhight">
+              <input type="checkbox" id="lowercase" class="check-boxes-checked" />
+              <label for="lowercase">LOWERCASE</label>
+            </div>
+
+            <div class="check-box-3 check-box-label-widthandhight">
+              <input type="checkbox" id="numbers-box" class="check-boxes-checked" />
+              <label for="numbers-box">NUMBERS</label>
+            </div>
+
+            <div class="check-box-4 check-box-label-widthandhight">
+              <input type="checkbox" id="symbols-box" class="check-boxes-checked"/>
+              <label for="symbols-box">SYMBOLS</label>
+            </div>
+          </div>
+
+
+          <!-- password-strength -->
+          <div class="strength-light-div">
+            <div class="strength-light"></div>
+          </div>
+
+
+
+          <!-- password-button -->
+          <div class="password-generate-btn">
+            <button class="generatepassbtn">Get Your Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/9f36861056.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

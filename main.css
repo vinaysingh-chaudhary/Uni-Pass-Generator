@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.737);
+    position: relative;
+}
+
+.website-name{
+font-size: 2.5rem;
+color: white;
+}
+
+.inner-div{
+    width: 25%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.348);
+}
+
+.password-copy-section{
+    height: 10%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.348);
+}
+
+.password-section{
+    width: 85%;
+    margin-right: 5px;
+    padding-inline: 5%;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    border-radius: 8px 0px 0px 8px;
+    overflow: hidden;
+}
+
+.clip-board-btn{
+    width: 15%;
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    position: relative;
+}
+.clip-board-btn:focus{
+    background-color: rgb(75, 74, 74);
+    color: white;
+}
+
+.copied-text{
+    font-size: 0.8rem;
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    opacity: 0;
+}
+
+.copied-text.active{
+    opacity: 1;
+}
+
+.password-option-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.pass-length-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    padding: 5%;
+}
+
+.password-range-meter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.password-range-slider{
+    width: 100%;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 14px;
+    background-image: linear-gradient(to right, #729bae,#96c4d9);
+    background-repeat: no-repeat;
+}
+
+.password-range-slider::-webkit-slider-thumb{
+    transform: scale(1.7);
+    transition: all 100ms ease-in;    
+}
+
+.password-range-slider:focus{
+    box-shadow: 1px 1px 10px rgba(149, 149, 149, 0.571);
+}
+
+.check-boxes{
+    width: 75%;
+    height: 70%;
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    padding-bottom: 5px ;
+}
+
+.check-boxes>p{
+    font-size: 1rem;
+    color: #888a8b;
+}
+
+.check-boxes>.check-box-label-widthandhight{
+width: 100%;
+height: 25%; 
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.check-boxes>input{
+    position: absolute;
+}
+
+.check-box-label-widthandhight>label{
+width: 70%;
+height: 80%;
+text-align: center;
+font-size: 1.2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.check-boxes>input:active{
+    border: 1px solid black;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    visibility: hidden;
+}
+
+.check-boxes-checked:not(:checked)+label{
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgba(102, 102, 102, 0.769);
+    cursor: pointer;
+    border: 0.5px solid rgba(255, 255, 255, 0.421);
+    background-color: #CCD6DD;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.19);
+}
+
+.check-boxes-checked:checked+label{
+    border-radius: 5px;
+    background-color: #96bed2;
+    color: white;
+    box-shadow: 1.5px 1.5px 5px #89b1c4;
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 1px solid rgba(255, 255, 255, 0.485);
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.274);
+}
+
+.strength-light-div{
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 12%;
+    border-radius: 14px;
+    margin-top: -10px;
+}
+
+.strength-light{
+    width: 20%;
+    height: 20%;
+    border-radius: 14px;
+}
+
+.password-generate-btn{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+} 
+
+.generatepassbtn{
+width: 90%;
+height: 90%;
+border-radius: 8px ;
+cursor: pointer;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.388);
+border: none;
+}
+
+.generatepassbtn:focus{
+background-color: rgb(75, 74, 74);
+color: white;
+}
+
+
+/* media queries */
+@media (min-width: 300px) and (max-width: 600px){
+    .inner-div{
+        width: 90%;
+        height: 55%;
+    }
+
+    .password-copy-section{
+        width: 90%;
+    }
+
+    .website-name{
+        font-size: 2rem;
+    }
+
+    .generatepassbtn{
+        font-size: 1rem;
+    }
+
+    .copied-text{
+        font-size: 0.8rem;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 800px){
+    .inner-div{
+        width: 70%;
+        height: 55%;
+    }
+
+    .password-copy-section{
+        width: 70%;
+    }
+
+    .website-name{
+        font-size: 2rem;
+    }
+
+    .generatepassbtn{
+        font-size: 1rem;
+    }
+
+    .copied-text{
+        font-size: 0.8rem;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px){
+    .inner-div{
+        width: 50%;
+        height: 55%;
+    }
+
+    .password-copy-section{
+        width: 50%;
+    }
+
+    .website-name{
+        font-size: 3rem;
+    }
+
+    .generatepassbtn{
+        font-size: 1rem;
+    }
+
+    .copied-text{
+        font-size: 0.8rem;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px){
+    .inner-div{
+        width: 35%;
+        height: 55%;
+    }
+
+    .password-copy-section{
+        width: 35%;
+    }
+
+    .website-name{
+        font-size: 3rem;
+    }
+
+    .generatepassbtn{
+        font-size: 1rem;
+    }
+
+    .copied-text{
+        font-size: 0.7rem;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
